@@ -43,12 +43,12 @@ angular.module('starter.controllers', [])
 
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
-    { title: 'This', id: 1, photo: "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg" },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+    { hed: 'Revealed: how Whisper app tracks anonymous users', id: 1, photo: "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg" },
+    { hed: 'Chill', id: 2 },
+    { hed: 'Dubstep', id: 3 },
+    { hed: 'Indie', id: 4 },
+    { hed: 'Rap', id: 5 },
+    { hed: 'Cowbell', id: 6 }
   ];
 })
 
