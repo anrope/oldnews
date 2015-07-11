@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/myApp/main.m
+  /Users/lindsaycarbonell/Documents/REPOS/oldnews/platforms/ios/myApp/main.m

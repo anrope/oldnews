@@ -1,5 +1,10 @@
-<ion-view view-title="Playlist">
+<ion-view view-title="Catch Up">
   <ion-content>
-    <h1>Playlist</h1>
+  	<ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        <img src='{{playlist.photo}}'><img>
+        {{playlist.hed}}
+      </ion-item>
+    </ion-list>
   </ion-content>
 </ion-view>
