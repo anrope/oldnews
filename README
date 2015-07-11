@@ -1,0 +1,57 @@
+HJDC Old News
+
+firebase -> frontend data format
+
+user_history = {
+    'user_id': 'acbdfjuiwje3423ijiofj',
+    'articles': [
+        {
+            'url': 'http://nytimes.com/sports/germany-1-brazil-7',
+            'title': 'Germany steamrolls Brazil 7-1',
+            'image': 'http://nytimes.com/images/1ojif1foij.jpg',
+            'keywords': ['soccer', 'blowout'],
+            'entities': ['david luiz', 'brazil', 'germany'],
+            'recommendations': [
+                {
+                    'url': 'http://espn.com/soccer/brazil-neymar-friendly',
+                    'title': 'Neymar leads Brazil over Uruguay in international friendly',
+                    'image': 'http://espn.com/images/ojrifjio3jfoi3j.jpg',
+                },
+                {
+                    'url': 'http://washingtonpost.com/recommended-article',
+                    'title': 'great recommended article title',
+                    'image': 'http://washingtonpost.com/recommended-article.jpg',
+                },
+                {
+                    'url': 'http://washingtonpost.com/recommended-article',
+                    'title': 'great recommended article title',
+                    'image': 'http://washingtonpost.com/recommended-article.jpg',
+                }
+            ]
+        },
+        {
+            'url': 'http://washingtonpost.com/news/greece-eu-loan-default',
+            'title': 'Greece in economic turmoil',
+            'image': 'http://washingtonpost.com/images/3io4jr3oi4jr.jpg',
+            'keywords': ['greece', 'default', 'austerity'],
+            'entities': ['greece', 'eu'],
+            'recommendations': [
+                {
+                    'url': 'http://espn.com/soccer/brazil-neymar-friendly',
+                    'title': 'Neymar leads Brazil over Uruguay in international friendly',
+                    'image': 'http://espn.com/images/ojrifjio3jfoi3j.jpg',
+                },
+                {
+                    'url': 'http://washingtonpost.com/recommended-article',
+                    'title': 'great recommended article title',
+                    'image': 'http://washingtonpost.com/recommended-article.jpg',
+                },
+                {
+                    'url': 'http://washingtonpost.com/recommended-article',
+                    'title': 'great recommended article title',
+                    'image': 'http://washingtonpost.com/recommended-article.jpg',
+                }
+            ]
+        }
+    ]
+}
