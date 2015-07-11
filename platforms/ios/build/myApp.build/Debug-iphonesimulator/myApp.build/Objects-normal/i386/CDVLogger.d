@@ -1,0 +1,24 @@
+dependencies: \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/myApp/Plugins/cordova-plugin-console/CDVLogger.m \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/myApp/Plugins/cordova-plugin-console/CDVLogger.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/build/emulator/include/Cordova/CDVAvailabilityDeprecated.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/build/emulator/include/Cordova/CDV.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/build/emulator/include/Cordova/CDVViewController.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/build/emulator/include/Cordova/CDVDebug.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/build/emulator/include/Cordova/CDVTimer.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/build/emulator/include/Cordova/CDVJSON.h

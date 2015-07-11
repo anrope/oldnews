@@ -1,0 +1,28 @@
+dependencies: \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDVViewController.m \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDV.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDVAvailability.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDVAvailabilityDeprecated.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDVPlugin.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDVPluginResult.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDVViewController.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDVWhitelist.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDVDebug.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDVTimer.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/NSData+Base64.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDVJSON.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDVConfigParser.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h \
+  /Users/colleenmcenaney/Desktop/oldnews/platforms/ios/CordovaLib/Classes/CDVHandleOpenURL.h
