@@ -1,21 +1,21 @@
 <ion-view view-title="Old News">
   <ion-content>
-	<div ng-switch on="video">
-	    <div ng-switch-when="video.large">
-	        <!-- code to render a large video block-->
-	    </div>
-	    <div ng-switch-default>
-	        <!-- code to render the regular video block -->
-	    </div>
-	</div>
 
-    <!-- <ion-list>
-      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+
+	<!-- <div ng-if="{{playlist.id}} == 2">
+	    heeeey
+	</div>
+	<div ng-if="{{playlist.id != 2}}">
+	    nooooo
+	</div> -->
+
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" >
         <img src='{{playlist.photo}}'><img>
-        {{playlist.hed}}
+        <h1>{{playlist.hed}}</h1>
       </ion-item>
-    </ion-list> -->
-    
+    </ion-list>
+
   </ion-content>
 </ion-view>
 

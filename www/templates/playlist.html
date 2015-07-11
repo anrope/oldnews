@@ -1,10 +1,13 @@
 <ion-view view-title="Catch Up">
   <ion-content>
-  	<ion-list>
-      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+  
+<!-- 
+      <ion-item ng-repeat="playlist {{playlist.id}}" href="#/app/playlists/{{playlist.id}}">
         <img src='{{playlist.photo}}'><img>
-        {{playlist.hed}}
-      </ion-item>
-    </ion-list>
+      </ion-item> -->
+     
+       {{playlists[{{playlist.id}}]}}
+       
+
   </ion-content>
 </ion-view>
