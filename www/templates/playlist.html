@@ -8,6 +8,10 @@
      <!-- 
        {{playlists[{{playlist.id}}]}} -->
        
+     <!--   {{ location.path().split('/')[3]}} -->
+
+     {{playlists[location.path().split('/')[3]-1].hed}}
+
 
   </ion-content>
 </ion-view>
