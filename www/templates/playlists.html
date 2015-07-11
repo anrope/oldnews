@@ -10,7 +10,7 @@
 	</div> -->
 
     <ion-list>
-      <ion-item ng-repeat="playlist in playlists" >
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
         <img src='{{playlist.photo}}'><img>
         <h1>{{playlist.hed}}</h1>
       </ion-item>
