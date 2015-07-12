@@ -7,6 +7,9 @@
 
 Who better to recommend what you should read today than you? Our project is a "throwback recommendation engine" powered by your past self. It was created at the third Hacking Journalism, which was hosted at the Washington Post.
 
+##Slides
+See project [View slides](https://docs.google.com/presentation/d/1AEq2_NnTDShNXdvNn8rZfp1pRXz1Hztd296X8qAkXVQ/edit?usp=sharing) for more information on our project.
+
 ## Documentation
 See project [wiki](http://www.placecage.com/) for documentation on getting started.
 
