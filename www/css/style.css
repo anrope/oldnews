@@ -1,17 +1,52 @@
 /* Empty. Add your own CSS if you like */
 <<<<<<< HEAD
 
-.title{
-	font-family:'Playfair Display';
-	font-size:23pt;
-	color:blue;
-}
 =======
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+
 .wide-as-needed{
 	overflow-x:scroll;
-
 	height:100px;
 }
+
+h1{
+	font-family:'Oswald';
+	font-size:22pt;
+	margin-left:30pt;
+	padding-top:5pt;
+	display:none;
+}
+
+ion-item.item{
+	font-family:'Questrial';
+}
+
+span.input-label{
+	font-family:'Questrial';
+
+}
+
+button.button.button-block.button-positive{
+	font-family:'Questrial';
+	font-size:15pt;
+}
+
+button.button.button-clear{
+	font-family:'Oswald';
+	margin-bottom: -2px;
+
+}
+.modal{
+	max-height: 235spx;
+}
+
+h4{
+	font-family:'Oswald';
+	font-weight:400;
+	font-size:17pt;
+	letter-spacing:.3pt;
+}
+
 /*
 ion-scroll{
 	max-wdith:100%;
