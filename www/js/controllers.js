@@ -14,7 +14,30 @@ angular.module('starter.controllers', [])
   var URL = location.hash;
   var trimmedURL = URL.split('/')[3]
  
-  
+  fb = new Firebase("https://blazing-torch-4098.firebaseIO.com/users/anrope-test");
+
+  function zeropad(n){ return n<10 ? '0'+n : n; }
+
+  $rootScope.playlists = 'hi'
+
+  for (var i = 0; i < 10; i++){
+ 
+    var today = new Date();
+    var month = zeropad(today.getMonth());
+    var day = zeropad(today.getDate());
+    var year = today.getFullYear() - i;
+    var fullDate = year+'-'+month+'-'+day;
+
+    fb.orderByChild('timestamp').on('value', function(snapshot){
+      var values = snapshot.val();
+      values.id = i;
+      $rootScope.playlists = values;
+
+      $.each(values, function(item){
+        values[item].hash = encodeURIComponent(values[item].title.substring(values[item].title.length - 7));
+      })
+    });
+  }
   
   
   // Form data for the login modal
@@ -58,44 +81,6 @@ angular.module('starter.controllers', [])
 
 
 .controller('PlaylistsCtrl', function($scope) {
-  fb = new Firebase("https://blazing-torch-4098.firebaseIO.com/users/anrope-test");
-  //var res = fb.orderByValue().equalTo('2009-11-12');
-  fb.orderByChild('timestamp').equalTo('2015-07-10').on('value', function(snapshot){
-    console.log(snapshot.val());
-
-  });
-
-  function zeropad(n){ return n<10 ? '0'+n : n; }
- 
-  $scope.bigData = [];
-
-  var counter = -1;
-  for (i = 0; i < 10; i++){
-    counter++;
-    var today = new Date();
-    var month = zeropad(today.getMonth());
-    var day = zeropad(today.getDate());
-    var year = today.getFullYear() - i;
-    var fullDate = year+'-'+month+'-'+day;
-
-
-    console.log(fullDate);
-    fb.orderByChild('timestamp').on('value', function(snapshot){
-      
-      // $scope.playlists = snapshot.val();
-
-      var values = snapshot.val();
-      values.id = counter;
-      $scope.bigData.push(values);
-
-      console.log(values, snapshot.key(), i);
-   
-
-    });
-
-
-    
-  }
 
   
 
@@ -123,4 +108,19 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
+  $scope.location = window.location;
+  var URL = location.hash;
+  var trimmedURL = URL.split('/')[3]
+  console.log(trimmedURL)
+
+  console.log('+++ playlists from single view', $scope.playlists)
+
+  $.each($scope.playlists, function(idx, val) {
+    console.log('+++ playlist item', idx, val)
+    if (val.hash == trimmedURL) {
+      $scope.thisArticle = val;
+    }
+  })
+
+  console.log('+++ thisArticle', $scope.thisArticle)
 });
