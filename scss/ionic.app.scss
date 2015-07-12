@@ -20,9 +20,11 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Oswald:400,300,700);
+//#1C75BC style blue
+//#5C4C3E style brown
 
-
-h1{
-	color: blue;
+.title.title-center.header-item{
+	font-family:'Playfair Display';
+	font-size:45pt;
 }
-
