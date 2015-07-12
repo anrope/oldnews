@@ -1,12 +1,12 @@
 /* Empty. Add your own CSS if you like */
-.wide-as-needed{
-	overflow:scroll;
-	white-space:nowrap;
+.wide-as-needed {
+  overflow: scroll;
+  white-space: nowrap;
 }
-
+/*
 ion-scroll{
 	max-wdith:100%;
-}
+}*/
 
 /*.container{
 	padding-left:10px;
@@ -20,8 +20,14 @@ img{
 }
 
 .main-list-item{
-	width:200px;
+/*	width:200px;*/
 	float:left;
+	max-width:200px;
+	display:inline-block;
+}
+
+.ion-list{
+	white-space: nowrap;
 }
 
 .single-img{
@@ -30,7 +36,7 @@ img{
 
 }
 
-.container.single h4, .container.single p{
+.container.single p{
 	margin:0px 10px 0px 10px;
 
 }
@@ -41,4 +47,23 @@ img{
 	margin:0 auto;
 	margin-left:75px;
 
+}
+
+h4{
+	padding-left:10px;
+}
+
+
+
+.scroll-horiz {
+  width: 100%;
+  
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.box {
+    width: 4000px;
+    
+ 
 }

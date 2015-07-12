@@ -36,6 +36,11 @@ angular.module('starter.controllers', [])
     $scope.modal.show();
   };
 
+  // $scope.disableVerticalScrolling = function() {
+  //   var scrollPos = $ionicScrollDelegate.getScrollPosition().top;
+  //   $ionicScrollDelegate.scrollTo(0, scrollPos, false);
+  // } 
+
   // Perform the login action when the user submits the login form
   $scope.doLogin = function() {
     console.log('Doing login', $scope.loginData);
@@ -47,6 +52,9 @@ angular.module('starter.controllers', [])
     }, 1000);
   };
 })
+
+
+
 
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [

@@ -1,8 +1,7 @@
 /* Empty. Add your own CSS if you like */
-.wide-as-needed{
-	overflow-x:scroll;
-
-	height:100px;
+.wide-as-needed {
+  overflow: scroll;
+  white-space: nowrap;
 }
 /*
 ion-scroll{
@@ -24,6 +23,11 @@ img{
 /*	width:200px;*/
 	float:left;
 	max-width:200px;
+	display:inline-block;
+}
+
+.ion-list{
+	white-space: nowrap;
 }
 
 .single-img{
@@ -47,4 +51,19 @@ img{
 
 h4{
 	padding-left:10px;
+}
+
+
+
+.scroll-horiz {
+  width: 100%;
+  
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.box {
+    width: 4000px;
+    
+ 
 }
