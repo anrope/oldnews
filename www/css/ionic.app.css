@@ -1,5 +1,8 @@
 @charset "UTF-8";
+<<<<<<< HEAD
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Oswald:400,300,700);
+=======
+>>>>>>> 20e429a74a5f6136e3ff324b2992c1c4608d989a
 /*
 To customize the look and feel of Ionic, you can override the variables
 in ionic's _variables.scss file.
@@ -7694,6 +7697,11 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+<<<<<<< HEAD
 .title.title-center.header-item {
   font-family: 'Playfair Display';
   font-size: 45pt; }
+=======
+h1 {
+  color: blue; }
+>>>>>>> 20e429a74a5f6136e3ff324b2992c1c4608d989a

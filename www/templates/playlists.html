@@ -1,20 +1,58 @@
-<ion-view view-title="Old News">
+<ion-view>
+
+<ion-nav-title>
+<img src='img/logo-large.png'></img>
+
+
+</ion-nav-title>
   <ion-content>
 
 
-	<!-- <div ng-if="{{playlist.id}} == 2">
-	    heeeey
-	</div>
-	<div ng-if="{{playlist.id != 2}}">
-	    nooooo
-	</div> -->
+  <h4>Recommended for You</h4>
+  
+    <ion-scroll direction="x" class='wide-as-needed'>
+      
 
-    <ion-list>
-      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
-        <img src='{{playlist.photo}}'><img>
-        <h1>{{playlist.hed}}</h1>
+      
+   <ion-list>
+
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}" class='main-list-item'>
+        <img src='{{playlist.img}}'><img>
+        <h2>{{playlist.title}}</h2>
       </ion-item>
     </ion-list>
+
+    </ion-scroll>
+
+    <h4>2014</h4>
+    <ion-list>
+
+      <ion-item ng-repeat="week in weeks" href="#/app/playlists/{{week.id}}" class='main-list-item'>
+        <img src='{{week.img}}'><img>
+        <h2>{{week.title}}</h2>
+      </ion-item>
+    </ion-list> 
+
+    
+
+
+   <!--  <h2>Recommended for You</h2>
+    <ion-list>
+
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        <img src='{{playlist.img}}'><img>
+        <h1>{{playlist.title}}</h1>
+      </ion-item>
+    </ion-list>
+
+    <h2>What You've Read in the Past Week</h2>
+    <ion-list>
+
+      <ion-item ng-repeat="week in weeks" href="#/app/playlists/{{week.id}}">
+        <img src='{{week.img}}'><img>
+        <h1>{{week.title}}</h1>
+      </ion-item>
+    </ion-list> -->
 
   </ion-content>
 </ion-view>

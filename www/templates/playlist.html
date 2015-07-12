@@ -1,13 +1,17 @@
-<ion-view view-title="Catch Up">
-  <ion-content>
+<ion-view >
+<ion-nav-title>
+<img src='img/logo-large.png'></img>
+
+
+</ion-nav-title>
+  <ion-content class='container'>
   
-<!-- 
-      <ion-item ng-repeat="playlist {{playlist.id}}" href="#/app/playlists/{{playlist.id}}">
-        <img src='{{playlist.photo}}'><img>
-      </ion-item> -->
-     <!-- 
-       {{playlists[{{playlist.id}}]}} -->
-       
+  	<div class='container single'>
+  		<img src="{{playlists[location.path().split('/')[3]-1].img}}" class="single-img"></img>
+		<h4>{{playlists[location.path().split('/')[3]-1].title}}</h4>
+		<p>{{playlists[location.path().split('/')[3]-1].desc}}
+	</div>
+
 
   </ion-content>
 </ion-view>

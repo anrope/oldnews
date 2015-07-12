@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+.controller('AppCtrl', function($scope, $ionicModal, $timeout, $rootScope, $location) {
   
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -8,6 +8,13 @@ angular.module('starter.controllers', [])
   // listen for the $ionicView.enter event:
   //$scope.$on('$ionicView.enter', function(e) {
   //});
+  
+  $rootScope.location = $location;
+  var URL = location.hash;
+  var trimmedURL = URL.split('/')[3]
+ 
+  
+  
   
   // Form data for the login modal
   $scope.loginData = {};
@@ -43,12 +50,25 @@ angular.module('starter.controllers', [])
 
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
-    { hed: 'Revealed: how Whisper app tracks anonymous users', id: 1, photo: "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg" },
-    { hed: 'Chill', id: 2 },
-    { hed: 'Dubstep', id: 3 },
-    { hed: 'Indie', id: 4 },
-    { hed: 'Rap', id: 5 },
-    { hed: 'Cowbell', id: 6 }
+    { title: 'Revealed: how Whisper app tracks anonymous users', id: 1, img: "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg", desc: "This is a fake descripttion" },
+    { title: 'Revealed: how Whisper app tracks anonymous users', id: 2, img: "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg", desc: "This is a fake descripttion" },
+    { title: 'Revealed: how Whisper app tracks anonymous users', id: 3, img: "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg", desc: "This is a fake descripttion" },
+    { title: 'Revealed: how Whisper app tracks anonymous users', id: 4, img: "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg", desc: "This is a fake descripttion" },
+
+    { title: 'Chill', id: 5 },
+    { title: 'Dubstep', id: 6 },
+    { title: 'Indie', id: 7 },
+    { title: 'Rap', id: 8 },
+    { title: 'Cowbell', id: 8 }
+  ];
+
+  $scope.weeks = [
+    { title: 'OTHER: how Whisper app tracks anonymous users', id: 1, img: "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg", desc: "This is a fake descripttion" },
+    { title: 'Chill', id: 2 },
+    { title: 'Dubstep', id: 3 },
+    { title: 'Indie', id: 4 },
+    { title: 'Rap', id: 5 },
+    { title: 'Cowbell', id: 6 }
   ];
 })
 

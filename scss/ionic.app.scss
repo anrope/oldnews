@@ -20,6 +20,30 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
+<<<<<<< HEAD
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Oswald:400,300,700);
 //#1C75BC style blue
 //#5C4C3E style brown
+=======
+
+
+.wide-as-needed{
+	overflow:scroll;
+	white-space:nowrap;
+}
+
+.scroll{
+	min-wdith:1000px;
+}
+
+.container{
+	padding-left:10px;
+	padding-right:10px;
+}
+
+img{
+	width:80px;
+}
+
+
+>>>>>>> 20e429a74a5f6136e3ff324b2992c1c4608d989a

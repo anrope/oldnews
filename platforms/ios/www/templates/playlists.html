@@ -1,21 +1,57 @@
-<ion-view view-title="Old News">
-  <ion-content>
-	<div ng-switch on="video">
-	    <div ng-switch-when="video.large">
-	        <!-- code to render a large video block-->
-	    </div>
-	    <div ng-switch-default>
-	        <!-- code to render the regular video block -->
-	    </div>
-	</div>
+<ion-view>
 
-    <!-- <ion-list>
+<ion-nav-title>
+<img src='img/logo-large.png'></img>
+
+
+</ion-nav-title>
+  <ion-content>
+
+
+	
+    <ion-scroll direction="x" class='wide-as-needed'>
+      
+
+      
+  <!--       <a class="button inline-button">button</button>
+          <a class="button inline-button">button</button>
+            <a class="button inline-button">button</button>
+              <a class="button inline-button">button</button>
+       <a class="button">button</button>
+         <a class="button">button</button>
+           <a class="button">button</button>
+             <a class="button">button</button>
+               <a class="button">button</button>
+                 <a class="button">button</button>
+                   <a class="button">button</button>
+ -->
+                    <ion-list>
+
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}" class='main-list-item'>
+        <img src='{{playlist.img}}'><img>
+        <h2>{{playlist.title}}</h2>
+      </ion-item>
+    </ion-list>
+
+    </ion-scroll>
+   <!--  <h2>Recommended for You</h2>
+    <ion-list>
+
       <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
-        <img src='{{playlist.photo}}'><img>
-        {{playlist.hed}}
+        <img src='{{playlist.img}}'><img>
+        <h1>{{playlist.title}}</h1>
+      </ion-item>
+    </ion-list>
+
+    <h2>What You've Read in the Past Week</h2>
+    <ion-list>
+
+      <ion-item ng-repeat="week in weeks" href="#/app/playlists/{{week.id}}">
+        <img src='{{week.img}}'><img>
+        <h1>{{week.title}}</h1>
       </ion-item>
     </ion-list> -->
-    
+
   </ion-content>
 </ion-view>
 

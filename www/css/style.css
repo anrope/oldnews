@@ -1,7 +1,59 @@
 /* Empty. Add your own CSS if you like */
+<<<<<<< HEAD
 
 .title{
 	font-family:'Playfair Display';
 	font-size:23pt;
 	color:blue;
 }
+=======
+.wide-as-needed{
+	overflow-x:scroll;
+
+	height:100px;
+}
+/*
+ion-scroll{
+	max-wdith:100%;
+}*/
+
+/*.container{
+	padding-left:10px;
+	padding-right:10px;
+}*/
+
+img{
+	width:80px;
+	float:left;
+	margin-right:5px;
+}
+
+.main-list-item{
+/*	width:200px;*/
+	float:left;
+	max-width:200px;
+}
+
+.single-img{
+	width:100%;
+	margin-bottom:10px;
+
+}
+
+.container.single p{
+	margin:0px 10px 0px 10px;
+
+}
+
+.nav-bar-title img{
+	width:50%;
+	max-width: 150px;
+	margin:0 auto;
+	margin-left:75px;
+
+}
+
+h4{
+	padding-left:10px;
+}
+>>>>>>> 20e429a74a5f6136e3ff324b2992c1c4608d989a
