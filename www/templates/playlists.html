@@ -8,7 +8,7 @@
   <ion-content>
 
 
-  <h4>Recommended for You</h4>
+
   
     <ion-scroll direction="xy" class='wide-as-needed'>
       
@@ -27,19 +27,21 @@
     <h4>2014</h4>
     <ion-list> -->
 
+      <h4>2014</h4>
       <div class="scroll-horiz" >
         <div class="box">
           <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}" class='main-list-item'>
-            <img src='{{playlist.img}}'><img>
+            <img src='{{playlist.image}}'><img>
             <h2>{{playlist.title}}</h2>
           </ion-item>
         </div>
       </div>
 
+      <h4>2013</h4>
       <div class="scroll-horiz">
         <div class="box">
           <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}" class='main-list-item'>
-            <img src='{{playlist.img}}'><img>
+            <img src='{{playlist.image}}'><img>
             <h2>{{playlist.title}}</h2>
           </ion-item>
         </div>
@@ -47,6 +49,7 @@
 
       <div class="scroll-horiz">
         <div class="box">
+      <h4>2012</h4>
           <ion-item ng-repeat="week in weeks" href="#/app/playlists/{{week.id}}" class='main-list-item'>
             <img src='{{week.img}}'><img>
             <h2>{{week.title}}</h2>

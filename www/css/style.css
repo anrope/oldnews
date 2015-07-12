@@ -1,17 +1,5 @@
 /* Empty. Add your own CSS if you like */
-.wide-as-needed {
-  overflow: scroll;
-  white-space: nowrap;
-}
-/*
-ion-scroll{
-	max-wdith:100%;
-}*/
 
-/*.container{
-	padding-left:10px;
-	padding-right:10px;
-}*/
 
 img{
 	width:80px;
@@ -22,13 +10,10 @@ img{
 .main-list-item{
 /*	width:200px;*/
 	float:left;
-	max-width:200px;
-	display:inline-block;
+	width:50%;
+	
 }
 
-.ion-list{
-	white-space: nowrap;
-}
 
 .single-img{
 	width:100%;
@@ -36,10 +21,17 @@ img{
 
 }
 
-.container.single p{
+.single p{
 	margin:0px 10px 0px 10px;
 
 }
+
+p.date{
+	color:#666;
+	font-size: 10px;
+	margin-top:-10px;
+}
+
 
 .nav-bar-title img{
 	width:50%;
@@ -49,21 +41,17 @@ img{
 
 }
 
+
+
 h4{
 	padding-left:10px;
+	clear:both;
 }
 
 
-
-.scroll-horiz {
-  width: 100%;
-  
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch;
+.catchup{
+	border-top: 1px solid #ccc;
+	margin-top:20px;
+	padding-top:10px;
 }
 
-.box {
-    width: 4000px;
-    
- 
-}
