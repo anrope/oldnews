@@ -8,25 +8,14 @@
   <ion-content>
 
 
-	
-    <ion-scroll direction="x" class='wide-as-needed'>
+  <h4>Recommended for You</h4>
+  
+    <ion-scroll direction="xy" class='wide-as-needed'>
       
 
       
-  <!--       <a class="button inline-button">button</button>
-          <a class="button inline-button">button</button>
-            <a class="button inline-button">button</button>
-              <a class="button inline-button">button</button>
-       <a class="button">button</button>
-         <a class="button">button</button>
-           <a class="button">button</button>
-             <a class="button">button</button>
-               <a class="button">button</button>
-                 <a class="button">button</button>
-                   <a class="button">button</button>
- -->
-                    <ion-list>
-
+   <ion-list>
+<!-- 
       <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}" class='main-list-item'>
         <img src='{{playlist.img}}'><img>
         <h2>{{playlist.title}}</h2>
@@ -34,6 +23,25 @@
     </ion-list>
 
     </ion-scroll>
+
+    <h4>2014</h4>
+    <ion-list> -->
+
+
+      <div class="scroll-horiz">
+        <div class="box">
+          <ion-item ng-repeat="week in weeks" href="#/app/playlists/{{week.id}}" class='main-list-item'>
+            <img src='{{week.img}}'><img>
+            <h2>{{week.title}}</h2>
+          </ion-item>
+
+        </div>
+      </div>
+    </ion-list> 
+
+
+
+
    <!--  <h2>Recommended for You</h2>
     <ion-list>
 

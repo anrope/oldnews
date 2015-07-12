@@ -1,4 +1,4 @@
-# ![OldNews Logo](https://placeholdit.imgix.net/~text?txtsize=51&txt=549%C3%97206&w=549&h=206)
+# ![OldNews Logo](https://raw.githubusercontent.com/anrope/oldnews/master/resources/OldNews_OldMan_600px.png)
 
 
 **Current project status**: v1.0: Ketchup
@@ -7,8 +7,11 @@
 
 Who better to recommend what you should read today than you? Our project is a "throwback recommendation engine" powered by your past self. It was created at the third Hacking Journalism, which was hosted at the Washington Post.
 
+##Slides
+See <a href="https://docs.google.com/presentation/d/1AEq2_NnTDShNXdvNn8rZfp1pRXz1Hztd296X8qAkXVQ/edit?usp=sharing">project slides</a> for more information on our project.
+
 ## Documentation
-See project [wiki](https://github.com/voxmedia/autotune/wiki) for documentation on getting started.
+See project [wiki](http://www.placecage.com/) for documentation on getting started.
 
 - [Getting started](http://www.placecage.com/)
 - [Setup](http://www.placecage.com/)
@@ -77,7 +80,7 @@ user_history = {
 
 - Lindsey Carbonell: <a href="https://twitter.com/authoressence">@authoressence</a>
 - Emily Greenhalgh: <a href="https://twitter.com/emwritesscience">@emwritesscience</a>
-- Will Halicks: <a href="https://twitter.com/twitterhandle">@twitterhandle</a>
+- Will Halicks: <a href="https://twitter.com/whalicks">@whalicks</a>
 - Colleen Mcenaney: <a href="https://twitter.com/colleenmcenaney">@colleenmcenaney</a>
 - Andrew Nguyen: <a href="https://twitter.com/onlyandrewn">@onlyandrewn</a>
 - Andy Pellett: <a href="https://twitter.com/anrop">@anrop</a>

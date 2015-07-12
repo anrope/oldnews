@@ -1,3 +1,4 @@
+var fb = null;
 angular.module('starter.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout, $rootScope, $location) {
@@ -36,6 +37,11 @@ angular.module('starter.controllers', [])
     $scope.modal.show();
   };
 
+  // $scope.disableVerticalScrolling = function() {
+  //   var scrollPos = $ionicScrollDelegate.getScrollPosition().top;
+  //   $ionicScrollDelegate.scrollTo(0, scrollPos, false);
+  // } 
+
   // Perform the login action when the user submits the login form
   $scope.doLogin = function() {
     console.log('Doing login', $scope.loginData);
@@ -48,28 +54,72 @@ angular.module('starter.controllers', [])
   };
 })
 
+
+
+
 .controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Revealed: how Whisper app tracks anonymous users', id: 1, img: "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg", desc: "This is a fake descripttion" },
-    { title: 'Revealed: how Whisper app tracks anonymous users', id: 2, img: "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg", desc: "This is a fake descripttion" },
-    { title: 'Revealed: how Whisper app tracks anonymous users', id: 3, img: "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg", desc: "This is a fake descripttion" },
-    { title: 'Revealed: how Whisper app tracks anonymous users', id: 4, img: "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg", desc: "This is a fake descripttion" },
+  fb = new Firebase("https://blazing-torch-4098.firebaseIO.com/users/anrope-test");
+  //var res = fb.orderByValue().equalTo('2009-11-12');
+  fb.orderByChild('timestamp').equalTo('2015-07-10').on('value', function(snapshot){
+    console.log(snapshot.val());
 
-    { title: 'Chill', id: 5 },
-    { title: 'Dubstep', id: 6 },
-    { title: 'Indie', id: 7 },
-    { title: 'Rap', id: 8 },
-    { title: 'Cowbell', id: 8 }
-  ];
+  });
 
-  $scope.weeks = [
-    { title: 'OTHER: how Whisper app tracks anonymous users', id: 1, img: "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg", desc: "This is a fake descripttion" },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
+  function zeropad(n){ return n<10 ? '0'+n : n; }
+ 
+  $scope.bigData = [];
+
+  var counter = -1;
+  for (i = 0; i < 10; i++){
+    counter++;
+    var today = new Date();
+    var month = zeropad(today.getMonth());
+    var day = zeropad(today.getDate());
+    var year = today.getFullYear() - i;
+    var fullDate = year+'-'+month+'-'+day;
+
+
+    console.log(fullDate);
+    fb.orderByChild('timestamp').on('value', function(snapshot){
+      
+      // $scope.playlists = snapshot.val();
+
+      var values = snapshot.val();
+      values.id = counter;
+      $scope.bigData.push(values);
+
+      console.log(values, snapshot.key(), i);
+   
+
+    });
+
+
+    
+  }
+
+  
+
+  
+
+  // $scope.playlists = [
+  //   { title: 'Revealed: how Whisper app tracks anonymous users', id: 1, img: "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg", desc: "This is a fake descripttion", date:"09/12/2013" },
+  //   { title: 'Revealed: how Whisper app tracks anonymous users', id: 2, img: "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg", desc: "This is a fake descripttion", date:"09/12/2013" },
+  //   { title: 'Revealed: how Whisper app tracks anonymous users', id: 3, img: "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg", desc: "This is a fake descripttion", date:"09/12/2013" },
+  //   { title: 'Revealed: how Whisper app tracks anonymous users', id: 4, img: "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg", desc: "This is a fake descripttion", date:"09/12/2013" },
+
+    
+  // ];
+
+  // $scope.weeks = [
+  //   { title: 'Revealed: how Whisper app tracks anonymous users', id: 1, img: "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg", desc: "This is a fake descripttion", date:"09/12/2013" },
+  //   { title: 'Revealed: how Whisper app tracks anonymous users', id: 2, img: "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg", desc: "This is a fake descripttion", date:"09/12/2013" },
+  //   { title: 'Revealed: how Whisper app tracks anonymous users', id: 3, img: "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg", desc: "This is a fake descripttion", date:"09/12/2013" },
+  //   { title: 'Revealed: how Whisper app tracks anonymous users', id: 4, img: "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg", desc: "This is a fake descripttion", date:"09/12/2013" },
+
+    
+  // ];
+
+  
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
