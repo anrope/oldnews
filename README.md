@@ -77,7 +77,7 @@ user_history = {
 
 - Lindsey Carbonell: <a href="https://twitter.com/authoressence">@authoressence</a>
 - Emily Greenhalgh: <a href="https://twitter.com/emwritesscience">@emwritesscience</a>
-- Will Halicks: <a href="https://twitter.com/twitterhandle">@twitterhandle</a>
+- Will Halicks: <a href="https://twitter.com/whalicks">@whalicks</a>
 - Colleen Mcenaney: <a href="https://twitter.com/colleenmcenaney">@colleenmcenaney</a>
 - Andrew Nguyen: <a href="https://twitter.com/onlyandrewn">@onlyandrewn</a>
 - Andy Pellett: <a href="https://twitter.com/anrop">@anrop</a>
