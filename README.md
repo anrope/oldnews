@@ -1,4 +1,4 @@
-# ![OldNews Logo](https://raw.githubusercontent.com/anrope/oldnews/master/resources/OldNews_OldMan.png)
+# ![OldNews Logo](https://raw.githubusercontent.com/anrope/oldnews/master/resources/OldNews_OldMan_600px.png)
 
 
 **Current project status**: v1.0: Ketchup
