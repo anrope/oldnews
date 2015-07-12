@@ -1,6 +1,16 @@
 /* Empty. Add your own CSS if you like */
 @import url(http://fonts.googleapis.com/css?family=Questrial);
 
+.bar-stable {
+	height: 45px;
+}
+
+.gramps {
+	width: 36px;
+	height: 36px;
+	/*border: 1px solid red;*/
+}
+
 .wide-as-needed{
 	overflow-x:scroll;
 	height:100px;
@@ -34,7 +44,7 @@ button.button.button-clear{
 
 }
 .modal{
-	max-height: 235spx;
+	max-height: 235px;
 }
 
 h4{
@@ -42,6 +52,10 @@ h4{
 	font-weight:400;
 	font-size:17pt;
 	letter-spacing:.3pt;
+}
+
+h4:hover{
+	cursor:default;
 }
 
 /*

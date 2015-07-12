@@ -8,73 +8,11 @@
 Who better to recommend what you should read today than you? Our project is a "throwback recommendation engine" powered by your past self. It was created at the third Hacking Journalism, which was hosted at the Washington Post.
 
 ##Slides
-See <a href="https://docs.google.com/presentation/d/1AEq2_NnTDShNXdvNn8rZfp1pRXz1Hztd296X8qAkXVQ/edit?usp=sharing">project slides</a> for more information on our project.
+See the <a href="https://docs.google.com/presentation/d/1AEq2_NnTDShNXdvNn8rZfp1pRXz1Hztd296X8qAkXVQ/edit?usp=sharing">project slides</a> for more information on our project.
 
-## Documentation
-See project [wiki](http://www.placecage.com/) for documentation on getting started.
+##Backend
 
-- [Getting started](http://www.placecage.com/)
-- [Setup](http://www.placecage.com/)
-- [How does it work?](http://www.placecage.com/)
-- [Reporting bugs](http://www.placecage.com/)
-- [Contribution guidelines](http://www.placecage.com/)
-
-
-```
-user_history = {
-    'user_id': 'acbdfjuiwje3423ijiofj',
-    'articles': [
-        {
-            'url': 'http://nytimes.com/sports/germany-1-brazil-7',
-            'title': 'Germany steamrolls Brazil 7-1',
-            'image': 'http://nytimes.com/images/1ojif1foij.jpg',
-            'keywords': ['soccer', 'blowout'],
-            'entities': ['david luiz', 'brazil', 'germany'],
-            'recommendations': [
-                {
-                    'url': 'http://espn.com/soccer/brazil-neymar-friendly',
-                    'title': 'Neymar leads Brazil over Uruguay in international friendly',
-                    'image': 'http://espn.com/images/ojrifjio3jfoi3j.jpg',
-                },
-                {
-                    'url': 'http://washingtonpost.com/recommended-article',
-                    'title': 'great recommended article title',
-                    'image': 'http://washingtonpost.com/recommended-article.jpg',
-                },
-                {
-                    'url': 'http://washingtonpost.com/recommended-article',
-                    'title': 'great recommended article title',
-                    'image': 'http://washingtonpost.com/recommended-article.jpg',
-                }
-            ]
-        },
-        {
-            'url': 'http://washingtonpost.com/news/greece-eu-loan-default',
-            'title': 'Greece in economic turmoil',
-            'image': 'http://washingtonpost.com/images/3io4jr3oi4jr.jpg',
-            'keywords': ['greece', 'default', 'austerity'],
-            'entities': ['greece', 'eu'],
-            'recommendations': [
-                {
-                    'url': 'http://espn.com/soccer/brazil-neymar-friendly',
-                    'title': 'Neymar leads Brazil over Uruguay in international friendly',
-                    'image': 'http://espn.com/images/ojrifjio3jfoi3j.jpg',
-                },
-                {
-                    'url': 'http://washingtonpost.com/recommended-article',
-                    'title': 'great recommended article title',
-                    'image': 'http://washingtonpost.com/recommended-article.jpg',
-                },
-                {
-                    'url': 'http://washingtonpost.com/recommended-article',
-                    'title': 'great recommended article title',
-                    'image': 'http://washingtonpost.com/recommended-article.jpg',
-                }
-            ]
-        }
-    ]
-}
-```
+The backend is written in Python, and takes care of ingesting a list of article urls representing the user's reading history. Each article is passed to the Embedly Extract API to grab necessary metadata including title, image, keywords, and related articles. The url and metadata are pushed into a Firebase database for consumption by the frontend.
 
 ## Credits
 
