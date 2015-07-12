@@ -1,7 +1,9 @@
 <ion-view>
 
 <ion-nav-title>
+
 <img src='img/logo-large.png'></img>
+
 
 
 </ion-nav-title>
@@ -9,11 +11,11 @@
 
 
   <h4>Recommended for You</h4>
-  
-    <ion-scroll direction="x" class='wide-as-needed'>
-      
 
-      
+    <ion-scroll direction="x" class='wide-as-needed'>
+
+
+
    <ion-list>
 
       <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}" class='main-list-item'>
@@ -31,9 +33,9 @@
         <img src='{{week.img}}'><img>
         <h2>{{week.title}}</h2>
       </ion-item>
-    </ion-list> 
+    </ion-list>
 
-    
+
 
 
    <!--  <h2>Recommended for You</h2>
@@ -56,4 +58,3 @@
 
   </ion-content>
 </ion-view>
-
