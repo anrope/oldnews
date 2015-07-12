@@ -1,11 +1,11 @@
-# ![OldNews Logo](https://raw.githubusercontent.com/wiki/voxmedia/autotune/images/autotune-logo.png)
+# ![OldNews Logo](https://placeholdit.imgix.net/~text?txtsize=51&txt=549%C3%97206&w=549&h=206)
 
 
 **Current project status**: v1.0: Ketchup
 
 ---
 
-Who better to recommend what you should read today than you? Our project is a throwback recommendation engine powered by your past self created at the third Hacking Journalism focused on data science, which was hosted at the Washington Post.
+Who better to recommend what you should read today than you? Our project is a "throwback recommendation engine" powered by your past self. It was created at the third Hacking Journalism, which was hosted at the Washington Post.
 
 ## Documentation
 See project [wiki](https://github.com/voxmedia/autotune/wiki) for documentation on getting started.
@@ -75,11 +75,11 @@ user_history = {
 
 ## Credits
 
-Lindsey Carbonell — <a href="https://twitter.com/authoressence">@authoressence</a>
-Emily Greenhalgh <a href="https://twitter.com/emwritesscience">@emwritesscience</a>
-Will Halicks <a href="https://twitter.com/twitterhandle">@twitterhandle</a>
-Colleen Mcenaney <a href="https://twitter.com/colleenmcenaney">@colleenmcenaney</a>
-Andrew Nguyen <a href="https://twitter.com/onlyandrewn">@onlyandrewn</a>
-Andy Pellett <a href="https://twitter.com/anrop">@anrop</a>
-Justina Vasquez <a href="https://twitter.com/helloimjustina">@helloimjustina</a>
+- Lindsey Carbonell: <a href="https://twitter.com/authoressence">@authoressence</a>
+- Emily Greenhalgh: <a href="https://twitter.com/emwritesscience">@emwritesscience</a>
+- Will Halicks: <a href="https://twitter.com/twitterhandle">@twitterhandle</a>
+- Colleen Mcenaney: <a href="https://twitter.com/colleenmcenaney">@colleenmcenaney</a>
+- Andrew Nguyen: <a href="https://twitter.com/onlyandrewn">@onlyandrewn</a>
+- Andy Pellett: <a href="https://twitter.com/anrop">@anrop</a>
+- Justina Vasquez: <a href="https://twitter.com/helloimjustina">@helloimjustina</a>
 
