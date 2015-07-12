@@ -1,4 +1,44 @@
 /* Empty. Add your own CSS if you like */
+.wide-as-needed{
+	overflow:scroll;
+	white-space:nowrap;
+}
+
+ion-scroll{
+	max-wdith:100%;
+}
+
+/*.container{
+	padding-left:10px;
+	padding-right:10px;
+}*/
+
 img{
-	width:50px;
+	width:80px;
+	float:left;
+	margin-right:5px;
+}
+
+.main-list-item{
+	width:200px;
+	float:left;
+}
+
+.single-img{
+	width:100%;
+	margin-bottom:10px;
+
+}
+
+.container.single h4, .container.single p{
+	margin:0px 10px 0px 10px;
+
+}
+
+.nav-bar-title img{
+	width:50%;
+	max-width: 150px;
+	margin:0 auto;
+	margin-left:75px;
+
 }

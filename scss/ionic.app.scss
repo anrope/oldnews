@@ -22,7 +22,22 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "www/lib/ionic/scss/ionic";
 
 
-h1{
-	color: blue;
+.wide-as-needed{
+	overflow:scroll;
+	white-space:nowrap;
 }
+
+.scroll{
+	min-wdith:1000px;
+}
+
+.container{
+	padding-left:10px;
+	padding-right:10px;
+}
+
+img{
+	width:80px;
+}
+
 
