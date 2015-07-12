@@ -1,4 +1,4 @@
-# ![OldNews Logo](https://placeholdit.imgix.net/~text?txtsize=51&txt=549%C3%97206&w=549&h=206)
+# ![OldNews Logo](https://raw.githubusercontent.com/anrope/oldnews/master/resources/OldNews_OldMan.png)
 
 
 **Current project status**: v1.0: Ketchup
@@ -8,7 +8,7 @@
 Who better to recommend what you should read today than you? Our project is a "throwback recommendation engine" powered by your past self. It was created at the third Hacking Journalism, which was hosted at the Washington Post.
 
 ## Documentation
-See project [wiki](https://github.com/voxmedia/autotune/wiki) for documentation on getting started.
+See project [wiki](http://www.placecage.com/) for documentation on getting started.
 
 - [Getting started](http://www.placecage.com/)
 - [Setup](http://www.placecage.com/)
