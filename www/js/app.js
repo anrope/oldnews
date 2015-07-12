@@ -62,7 +62,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
     views: {
       'menuContent': {
         templateUrl: "templates/playlist.html",
-        controller: 'PlaylistsCtrl'
+        controller: 'PlaylistCtrl'
       }
     }
   });

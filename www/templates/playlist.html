@@ -11,18 +11,11 @@
   	<div class='container single'>
   	
   		<img src="{{playlists[location.path().split('/')[3]-1].img}}" class="single-img"></img>
-		<h4>{{playlists[location.path().split('/')[3]-1].title}}</h4>
-		<p class='date'>Read on {{playlists[location.path().split('/')[3]-1].date}}</p>
-		<p>{{playlists[location.path().split('/')[3]-1].desc}}
+		<h4>{{thisArticle.title}}</h4>
+		<p class='date'>Read on {{thisArticle.timestamp}}</p>
+		<p>{{thisArticle.description}}
 
 		<h4 class='catchup'>The Latest</h4>
-
-		{{ bigData[0] }}
-
-		{{ location.path().split('/')[3] }}
-
-
-
 	</div>
 
 
