@@ -60,18 +60,18 @@ angular.module('starter.controllers', [])
 .controller('PlaylistsCtrl', function($scope) {
   fb = new Firebase("https://blazing-torch-4098.firebaseIO.com/users/anrope-test");
   //var res = fb.orderByValue().equalTo('2009-11-12');
-  fb.orderByChild('timestamp').equalTo('2015-07-10').on('value', function(snapshot){
-    console.log(snapshot.val());
+  // fb.orderByChild('timestamp').equalTo('2015-07-10').on('value', function(snapshot){
+  //   console.log(snapshot.val());
 
-  });
+  // });
 
   function zeropad(n){ return n<10 ? '0'+n : n; }
  
   $scope.bigData = [];
 
-  var counter = -1;
-  for (i = 0; i < 10; i++){
-    counter++;
+
+  for (var i = 0; i < 10; i++){
+ 
     var today = new Date();
     var month = zeropad(today.getMonth());
     var day = zeropad(today.getDate());
@@ -82,13 +82,21 @@ angular.module('starter.controllers', [])
     console.log(fullDate);
     fb.orderByChild('timestamp').on('value', function(snapshot){
       
-      // $scope.playlists = snapshot.val();
+      $scope.playlists = snapshot.val();
 
       var values = snapshot.val();
-      values.id = counter;
-      $scope.bigData.push(values);
+      values.id = i;
+      $scope.playlists = values;
 
-      console.log(values, snapshot.key(), i);
+      $.each(values, function(item){
+        
+        values[item].hash = encodeURIComponent(values[item].url.substring(values[item].url.length - 7));
+
+      })
+
+      console.log($scope.playlists)
+
+      
    
 
     });
@@ -123,4 +131,8 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
+
+  console.log($location )
+
+
 });
